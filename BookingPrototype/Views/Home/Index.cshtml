@@ -1,0 +1,6 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layouts/_Layout.cshtml";
+}
+<div ng-show="pageLoading" class="page-loader"><div class="page-loader__message"><p>Please wait...</p></div></div>
+<div ng-controller="baseController" ng-view autoscroll="" class="container"></div> 

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<!--[if lt 8]>         <html class="ie lt-ie9 lt-ie8 ng-app:app no-touch-support" lang="en" ng-app="app" id="ng-app" xmlns:ng="http://angularjs.org"> <![endif]-->
+<!--[if IE 8]>         <html class="ie lt-ie9 ie8 ng-app:app no-touch-support" lang="en" ng-app="app" id="ng-app" xmlns:ng="http://angularjs.org"> <![endif]-->
+<!--[if IE 9]>         <html class="ie ie9 ng-app:app no-touch-support" lang="en" ng-app="app" id="ng-app" xmlns:ng="http://angularjs.org"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="ng-app:app no-touch-support" lang="en" ng-app="app" id="ng-app" xmlns:ng="http://angularjs.org">
+<!--<![endif]-->
+<head>
+    @Html.Partial("Head")
+</head>
+<body>
+    <noscript>
+        <div class="nojs">
+            <div class="modal">
+                <div class="notification">
+                    <a class="logo" href="#"><img src="/assets/images/logo.png" alt="logo" /></a>
+                    <div class="text richtext">
+                        <p>JS disabled message goes here.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </noscript>
+    <div class="wrapper">
+        @Html.Partial("Header")
+        @RenderBody()
+        @Html.Partial("Footer")
+    </div>
+
+    <!--- jQuery --->
+    <script type="text/javascript" src="~/assets/js/libs/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/jquery.smartresize.js"></script>
+
+    <!--- Angular --->
+
+    <script type="text/javascript" src="~/assets/js/libs/angular.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/angular-touch.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/angular-route.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/angular-cookies.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/angular-animate.js"></script>
+
+    <script type="text/javascript" src="~/assets/js/libs/quick-ng-repeat.js"></script>
+    <script type="text/javascript" src="~/assets/js/libs/bindonce.js"></script>
+
+    <!--Angular App Configurations-->
+    <script type="text/javascript" src="~/assets/js/angular-app/app.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/routes.js"></script>
+
+    <!--Angular Services-->
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/book/service.bookForm.js"></script>
+
+    <!--Angular Controllers-->
+    <script type="text/javascript" src="~/assets/js/angular-app/controller.base.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/book/controller.bookForm.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/availability/controller.availability.js"></script>
+
+    <!--Angular Directives-->
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/book/directives/directive.datePicker.js"></script>
+
+</body>
+</html>

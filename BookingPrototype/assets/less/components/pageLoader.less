@@ -1,0 +1,33 @@
+﻿.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 999;
+    text-align: center;
+    &:before {
+        content: '';
+        width:0;
+        height: 100%;
+        .inline-block(middle);
+    }
+
+    .page-loader__message {
+        max-width: 300px;
+        margin: 0;
+        background: #fff;
+        border: 10px solid #999;
+        padding: 3em;
+        position: relative;
+        .inline-block(middle);
+    }
+
+    p {
+        background: url(/assets/images/spinner.gif) top center no-repeat;
+        padding-top: 60px;
+        margin: 0;
+        .font-size(16);
+    }
+}

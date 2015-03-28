@@ -1,0 +1,29 @@
+﻿<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@ViewBag.Title</title>
+
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="/build/css/styles.css">
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie78.less?" />
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<!--<![endif]-->
+
+<script type="text/javascript">
+    /* set the html tag to have a javascript class to hide all the dynamic stuff */
+    document.getElementsByTagName("html")[0].className += " js";
+
+    /* workaround to get viewport size working on windows8 mobile */
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement("style");
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                "@@-ms-viewport{width:auto!important}"
+            )
+        );
+        document.getElementsByTagName("head")[0].
+            appendChild(msViewportStyle);
+    }
+</script>

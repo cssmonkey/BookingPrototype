@@ -1,0 +1,38 @@
+﻿.footer-content {
+    padding: 20px;
+}
+
+.footer-links-list {
+    margin-bottom: 20px;
+    li {
+        .font-size(14);
+    }
+    a {
+        padding: 0.4em 0;
+        display: block;
+    }
+}
+
+.footer-company-info {
+    .font-size(14);
+    .line-height(16);
+}
+
+.screen-569-up() {
+    .footer-content {
+        text-align: center;
+    }
+    .footer-links-list {
+        li {
+            border-right: 1px solid #969696;
+            .inline-block();
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+        a {
+            padding: 0.4em 1em;
+        }
+    }
+}

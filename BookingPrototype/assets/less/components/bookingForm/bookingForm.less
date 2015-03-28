@@ -1,0 +1,49 @@
+/* Inherits base styles from form.less */
+
+ .form--booking-form {
+ 	.disclaimer {
+ 		margin: 0 0 .5em;
+ 		.font-size(12);
+ 	}
+ }
+
+.rooms-select-panel .multiple-fields__title {
+ 	margin: 0 0 .5em;
+ 	font-weight: bold;
+}
+ .form-row--occupants-select {
+    .label {
+	    position: static;
+	    margin: 0 0 .25em;
+    }
+}
+
+.screen-569-up() {
+
+    .form-row-group {
+        .form-row--location {
+         
+        }
+        .form-row--datepicker {
+          .datepicker-container {
+              display: block;
+          }
+        }
+
+        .form-row--occupants-select {
+            width: 33.33333%;
+
+            &:nth-child(1) {
+                padding-right: 0;
+            } 
+            &:nth-child(2) {
+                padding: 0 1.5em;
+            } 
+            &:nth-child(3) {
+                padding-right: 0;
+            } 
+        }
+    }
+
+
+}
