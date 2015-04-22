@@ -1,3 +1,79 @@
-﻿<div class="page">
-    <h1 class="page-title">Extras</h1>
+﻿<div class="page page--size-lg" ng-controller="extrasController">
+    <div class="page__inner">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="col-md-12">
+                    <div class="page-content-panel">
+                        <h1 class="page-title">Extras</h1>
+                        <div class="richtext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="addons-list">
+                            <div class="add-on" ng-class="{'add-on--selected': addOn_0}" ng-click="addOn_0 = !addOn_0">
+                                <div class="add-on__content">
+                                    <div class="add-on__image">
+                                        <img src="http://lorempixel.com/200/120/food/" alt="" />
+                                    </div>
+                                    <div class="add-on__description">
+                                        <h2 class="add-on__title--a">Champagne</h2>
+                                        <div class="richtext">
+                                            <p>Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="add-on__cta">
+                                        <div class="btn-container">
+                                            <button class="btn btn--a"><span ng-show="addOn_0">Remove</span><span ng-show="!addOn_0">Add</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-on" ng-class="{'add-on--selected': addOn_1}" ng-click="addOn_1 = !addOn_1">
+                                <div class="add-on__content">
+                                    <div class="add-on__image">
+                                        <img src="http://lorempixel.com/200/120/food/" alt="" />
+                                    </div>
+                                    <div class="add-on__description">
+                                        <h2 class="add-on__title--a">Wine and dine</h2>
+                                        <div class="richtext">
+                                            <p>Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="add-on__cta">
+                                        <div class="btn-container">
+                                            <button class="btn btn--a"><span ng-show="addOn_1">Remove</span><span ng-show="!addOn_1">Add</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-on" ng-class="{'add-on--selected': addOn_2}" ng-click="addOn_2 = !addOn_2">
+                                <div class="add-on__content">
+                                    <div class="add-on__image">
+                                        <img src="http://lorempixel.com/200/120/food/" alt="" />
+                                    </div>
+                                    <div class="add-on__description">
+                                        <h2 class="add-on__title--a">Flowers</h2>
+                                        <div class="richtext">
+                                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="add-on__cta">
+                                        <div class="btn-container">
+                                            <button class="btn btn--a"><span ng-show="addOn_2">Remove</span><span ng-show="!addOn_2">Add</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-container btn-container--next-step">
+                            <button class="btn btn--a" ng-click="submit($event);">Next: Dining</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

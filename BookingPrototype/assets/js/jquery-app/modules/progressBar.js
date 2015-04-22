@@ -20,14 +20,14 @@ window.APP = (function (module, $) {
         $('.progress-bar').addClass(cssClass + i);
     };
 
-    var currentSection = 5; // assuming this will come from angular
-    var updateProgressBar = function() {
-        var progressWidth = (currentSection / $('.progress-bar__list-item').length) * 100;
+    var updateProgressBar = function(current) {
+    	var progressWidth = (current / $('.progress-bar__list-item').length) * 100;
 
         progressWidth = Math.floor(progressWidth) + '%'
 
         $('.progress-bar .progress').width(progressWidth);
     }
+    m.progressBar.update = updateProgressBar;
 
     // modules to fire on pageload
     m.progressBar.init = function () {
@@ -37,7 +37,6 @@ window.APP = (function (module, $) {
         }
         
         setupLayout();
-        updateProgressBar();
     };
 
     return module;

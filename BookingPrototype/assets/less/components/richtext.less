@@ -1,4 +1,5 @@
 .richtext {
+    max-width: 840px;
 	h1 {
 		margin: 0 0 0.8em;
     	.font-size(30);
@@ -25,7 +26,7 @@
     }
 
     p {
-        margin:0 0 1.6em;
+        margin:0 0 1em;
         .font-size(14);
         .line-height(18);
     }
@@ -56,6 +57,10 @@
                 padding: 1em;
             }
         }
+    }
+
+    ul:last-child,p:last-child {
+        margin-bottom: 0;
     }
 
 }

@@ -24,6 +24,7 @@
     </noscript>
     <div class="wrapper">
         @Html.Partial("Header")
+        @Html.Partial("ProgressBar")
         @RenderBody()
         @Html.Partial("Footer")
     </div>
@@ -32,6 +33,12 @@
     <script type="text/javascript" src="~/assets/js/libs/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="~/assets/js/libs/jquery-ui.min.js"></script>
     <script type="text/javascript" src="~/assets/js/libs/jquery.smartresize.js"></script>
+
+    <!--- JS Modules --->
+    <script type="text/javascript" src="~/assets/js/jquery-app/modules/jquery.stepper.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery-app/modules/form.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery-app/modules/progressBar.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery-app/app.js"></script>
 
     <!--- Angular --->
 
@@ -50,11 +57,17 @@
 
     <!--Angular Services-->
     <script type="text/javascript" src="~/assets/js/angular-app/modules/book/service.bookForm.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/availability/service.availability.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/extras/service.extras.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/dining/service.dining.js"></script>
 
     <!--Angular Controllers-->
     <script type="text/javascript" src="~/assets/js/angular-app/controller.base.js"></script>
     <script type="text/javascript" src="~/assets/js/angular-app/modules/book/controller.bookForm.js"></script>
     <script type="text/javascript" src="~/assets/js/angular-app/modules/availability/controller.availability.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/dining/controller.dining.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/extras/controller.extras.js"></script>
+    <script type="text/javascript" src="~/assets/js/angular-app/modules/guest-details/controller.guestDetails.js"></script>
 
     <!--Angular Directives-->
     <script type="text/javascript" src="~/assets/js/angular-app/modules/book/directives/directive.datePicker.js"></script>

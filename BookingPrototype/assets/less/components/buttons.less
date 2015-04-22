@@ -1,0 +1,52 @@
+﻿.btn-container {
+
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    padding: 1em 1.8em;
+    overflow: visible;
+    text-decoration: none;
+    margin: 0;
+    position: relative;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+    .font-size(14);
+    .line-height(16);
+}
+.btn--a {
+    color: @color-btn--a;
+    background: @background-btn--a;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.btn--selected {
+        background: @background-btn-hover--a;
+    }
+}
+.btn--b {
+    color: @color-btn--b;
+    background: @background-btn--b;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.btn--selected {
+        background: @background-btn-hover--b;
+    }
+}
+
+
+.btn-container--next-step {
+    text-align: center;
+    margin: 40px 0 20px;
+    .btn {
+        padding-left: 2.4em;
+        padding-right: 2.4em;
+        display: inline-block;
+    }
+}

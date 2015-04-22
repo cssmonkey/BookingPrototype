@@ -17,13 +17,21 @@ html {
 .page-title {
 	color: #333; 
 	margin-bottom: 0.6em;
+    font-weight: bold;
 	.font-size(32);
 }
 .sub-title {
 	color: #333; 
 	margin-bottom: 0.6em;
+    font-weight: bold;
 	.font-size(28);
 }
+
+
+.btn--toggle-content {
+    display: none;
+}
+
 
 /* Page size modifiers */
 .page {
@@ -42,4 +50,25 @@ html {
 }
 .page--size-sm .page__inner {
     max-width: 740px;
+}
+
+.screen-0-768() {
+     .toggle-content {
+         display: none;
+     }
+     .toggle-content--expand {
+         display: block;
+     }
+    .btn--toggle-content {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0.8em;
+        .font-size(12);
+    }
+}
+
+.screen-768-up() {
+    .btn--toggle-content {
+        display: none;
+    }
 }

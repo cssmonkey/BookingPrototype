@@ -1,0 +1,25 @@
+﻿<div class="page page--size-lg">
+    <div class="page__inner">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="col-md-12">
+
+                    <div class="progress-bar" ng-show="showProgressBar">
+                        <p class="status-description">Your current progress: <span>step {{currentStep}} of {{totalSteps}}</span></p>
+                        <div class="progress-bar__content">
+                            <div class="progress"></div>
+                            <ol aria-hidden="true" class="progress-bar__list">
+                                <li class="progress-bar__list-item" ng-class="{'progress-bar__list-item--current' : currentStep == 1}"><div class="progress-bar__list-item-container"><span class="progress-bar__section-indicator"></span><span class="progress-bar__section-name">Room</span></div></li>
+                                <li class="progress-bar__list-item" ng-class="{'progress-bar__list-item--current' : currentStep == 2}"><div class="progress-bar__list-item-container"><span class="progress-bar__section-indicator"></span><span class="progress-bar__section-name">Extras</span></div></li>
+                                <li class="progress-bar__list-item" ng-class="{'progress-bar__list-item--current' : currentStep == 3}"><div class="progress-bar__list-item-container"><span class="progress-bar__section-indicator"></span><span class="progress-bar__section-name">Dining</span></div></li>
+                                <li class="progress-bar__list-item" ng-class="{'progress-bar__list-item--current' : currentStep == 4}"><div class="progress-bar__list-item-container"><span class="progress-bar__section-indicator"></span><span class="progress-bar__section-name">Your details</span></div></li>
+                                <li class="progress-bar__list-item" ng-class="{'progress-bar__list-item--current' : currentStep == 5}"><div class="progress-bar__list-item-container"><span class="progress-bar__section-indicator"></span><span class="progress-bar__section-name">Payment</span></div></li>
+                                <li class="progress-bar__list-item" ng-class="{'progress-bar__list-item--current' : currentStep == 6}"><div class="progress-bar__list-item-container"><span class="progress-bar__section-indicator"></span><span class="progress-bar__section-name">Confirmation</span></div></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,50 @@
-﻿<div class="page">
-    <h1 class="page-title">Guest Details</h1>
+﻿<div class="page page--size-lg" ng-controller="guestDetailsController">
+    <div class="page__inner">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="col-md-12">
+                    <div class="page-content-panel">
+                        <h1 class="page-title">Your details</h1>
+                        <div class="richtext">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <form name="guestDetailsForm" novalidate ng-submit="submitForm(guestDetailsForm.$valid)">
+                            <div class="section section--form">
+                                <h2 class="sub-title">Booker details</h2>
+                                <fieldset>
+                                    <legend>Booker details</legend>
+                                    <div class="form-row">
+                                        <label class="label" for="titleSelect">Title</label>
+                                        <div class="form-field">
+                                            <div class="styled-select">
+                                                <select name="titleSelect" id="titleSelect">
+                                                    <option>Mr</option>
+                                                    <option>Mrs</option>
+                                                    <option>Miss</option>
+                                                    <option>Something</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label class="label" for="firstName">First name</label>
+                                        <div class="form-field">
+                                            <input class="field" type="text" placeholder="" name="firstName" id="firstName" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label class="label" for="lastName">Last name</label>
+                                        <div class="form-field">
+                                            <input class="field" type="text" placeholder="" name="lastName" id="lastName" />
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

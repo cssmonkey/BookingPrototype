@@ -1,0 +1,222 @@
+﻿.availability-list {
+    margin-top: 40px;
+}
+
+.availability-item {
+    background: @background-list-item;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        padding: 20px;
+    }
+    &__image {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__rate-box {
+        
+        color: @color-default--a;
+        .from-txt,
+        .per-txt {
+            .font-size(14);
+        }
+
+        .from-txt {
+            display: block;
+        }
+        .price-txt {
+            font-weight: bold;
+            .font-size(22);
+            .line-height(20);
+        }
+    }
+
+    .availability-item__title--a,
+    .availability-item__title--b,
+    .availability-item__title--c {
+        margin: 0 0 0.8em;
+        font-weight: bold;
+    }
+    .availability-item__title--a {
+        color: @color-title--a;
+    }
+    .availability-item__title--b {
+        color: @color-title--b;
+    }
+    .availability-item__title--c {
+        color: @color-title--c;
+    }
+}
+
+.availability-rates {
+    margin: 0 20px;
+
+    .rate-block {
+        padding: 20px 0;
+        border-top: 1px solid darken(@border-list-item, 20%);
+
+        &:first-child {
+            border-top: none;
+        }
+
+        .rate-block__title {
+            margin: 0;
+            font-weight: bold;
+            color: @color-title--a;
+        }
+        .rate-block__text {
+            margin: 0;
+        }
+
+        .rate-block__price {
+            color: @color-title--a;
+            margin: 0;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+.screen-0-768() {
+    .availability-item {
+        .availability-item__title--a {
+            .font-size(24);
+        }
+        .availability-item__title--b {
+            .font-size(20);
+
+        }
+        .availability-item__title--c {
+            .font-size(18);
+        }
+        &__content {
+            padding-bottom: 0;
+
+            .toggle-content--expand {
+                padding-bottom: 20px;
+            }
+        }
+        &__description {
+            padding: 20px 0 0;
+        }
+        &__rate-box {
+            border-top: 1px solid @border-list-item;
+            margin: 0 -20px;
+            padding: 20px;
+        }
+
+    }
+
+    .availability-rates {
+        .rate-block {
+            .rate-block__title {
+                margin-bottom: 10px;
+                .font-size(18);
+            }
+            .rate-block__text {
+                .font-size(14);
+            }
+            .rate-block__price {
+                margin: 20px 0;
+                .font-size(16);
+                span {
+                    .font-size(22);
+                }
+            }
+        }
+    }
+}
+
+.screen-768-up() {
+    .availability-item {
+
+        .availability-item__title--a {
+            .font-size(30);
+        }
+        .availability-item__title--b {
+            .font-size(26);
+
+        }
+        .availability-item__title--c {
+            .font-size(24);
+        }
+
+        &__content {
+            display: table;
+        }
+        &__image,
+        &__description,
+        &__rate-box {
+            display: table-cell;
+            vertical-align: top;
+        }
+        &__image {
+            max-width: 200px;
+            width: 24.2%;
+        }
+        &__description {
+            padding: 0 20px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                border-right: 1px solid @border-list-item;
+            }
+        }
+        &__rate-box {
+            min-width: 160px;
+            padding-left: 40px;
+            vertical-align: middle;
+        }
+    }
+
+    .availability-rates {
+        .rate-block {
+            display: table;
+            width: 100%;
+            .rate-block__description,
+            .rate-block__pricing,
+            .rate-block__cta {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .rate-block__description {
+                width: 60%;
+            }
+            .rate-block__pricing {
+                text-align: right;
+            }
+            .rate-block__cta {
+                text-align: right;
+                .btn {
+                    .inline-block();
+                }
+            }
+
+            .rate-block__title {
+                margin-bottom: 10px;
+                .font-size(22);
+            }
+            .rate-block__text {
+                .font-size(14);
+            }
+            .rate-block__price {
+                .font-size(14);
+                span {
+                    .font-size(22);
+                }
+            }
+        }
+    }
+}

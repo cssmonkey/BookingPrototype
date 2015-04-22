@@ -10,8 +10,178 @@
                             <p>Officia deserunt mollit anim id est laborum.</p>
                         </div>
 
-                        <div class="availability-room-list">
-
+                        <div class="availability-list">
+                            <div class="availability-item">
+                                <div class="availability-item__content">
+                                    <div class="availability-item__image">
+                                        <img src="http://lorempixel.com/200/200/sports/" alt="" />
+                                    </div>
+                                    <div class="availability-item__description">
+                                        <h2 class="availability-item__title--a">Room type title</h2>
+                                        <button class="btn btn--toggle-content" ng-click="expand_0 = !expand_0"><span ng-show="expand_0">Less</span><span ng-show="!expand_0">More</span> info</button>
+                                        <div class="toggle-content" ng-class="{'toggle-content--expand': expand_0}">
+                                            <div class="richtext">
+                                                <p>Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <ul>
+                                                    <li>Large en-suite walk-in shower</li>
+                                                    <li>WIFI</li>
+                                                    <li>Window and carpets</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="availability-item__rate-box">
+                                        <p><span class="from-txt">from</span> <span class="price-txt">&pound;99.00</span> <span class="per-txt">per stay</span></p>
+                                        <div class="btn-container">
+                                            <button class="btn btn--a" ng-class="{'btn--selected': rates_0}" ng-click="rates_0 = !rates_0; $event.preventDefault();">Select</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="availability-rates" ng-show="rates_0">
+                                    <div class="rate-block">
+                                        <div class="rate-block__description">
+                                            <h3 class="rate-block__title">Leisure saver rate - Bed &amp; breakfast</h3>
+                                            <p class="rate-block__text">Prepayment required, non-refundable</p>
+                                        </div>
+                                        <div class="rate-block__pricing">
+                                            <p class="rate-block__price"><span>&pound;99.00</span> per stay</p>
+                                        </div>
+                                        <div class="rate-block__cta">
+                                            <div class="btn-container">
+                                                <button class="btn btn--a" ng-click="submit($event);">Select rate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rate-block">
+                                        <div class="rate-block__description">
+                                            <h3 class="rate-block__title">Flexible rate - Bed &amp; breakfast</h3>
+                                            <p class="rate-block__text">Prepayment required, non-refundable</p>
+                                        </div>
+                                        <div class="rate-block__pricing">
+                                            <p class="rate-block__price"><span>&pound;105.70</span> per stay</p>
+                                        </div>
+                                        <div class="rate-block__cta">
+                                            <div class="btn-container">
+                                                <button class="btn btn--a" ng-click="submit($event);">Select rate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="availability-item">
+                                <div class="availability-item__content">
+                                    <div class="availability-item__image">
+                                        <img src="http://lorempixel.com/200/200/sports/" alt="" />
+                                    </div>
+                                    <div class="availability-item__description">
+                                        <h2 class="availability-item__title--a">Room type title</h2>
+                                        <button class="btn btn--toggle-content" ng-click="expand_1 = !expand_1"><span ng-show="expand_1">Less</span><span ng-show="!expand_1">More</span> info</button>
+                                        <div class="toggle-content" ng-class="{'toggle-content--expand': expand_1}">
+                                            <div class="richtext">
+                                                <p>Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <ul>
+                                                    <li>Large en-suite walk-in shower</li>
+                                                    <li>WIFI</li>
+                                                    <li>Window and carpets</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="availability-item__rate-box">
+                                        <p><span class="from-txt">from</span> <span class="price-txt">&pound;99.00</span> <span class="per-txt">per stay</span></p>
+                                        <div class="btn-container">
+                                            <button class="btn btn--a" ng-class="{'btn--selected': rates_1}" ng-click="rates_1 = !rates_1; $event.preventDefault();">Select</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="availability-rates" ng-show="rates_1">
+                                    <div class="rate-block">
+                                        <div class="rate-block__description">
+                                            <h3 class="rate-block__title">Leisure saver rate - Bed &amp; breakfast</h3>
+                                            <p class="rate-block__text">Prepayment required, non-refundable</p>
+                                        </div>
+                                        <div class="rate-block__pricing">
+                                            <p class="rate-block__price"><span>&pound;99.00</span> per stay</p>
+                                        </div>
+                                        <div class="rate-block__cta">
+                                            <div class="btn-container">
+                                                <button class="btn btn--a" ng-click="submit($event);">Select rate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rate-block">
+                                        <div class="rate-block__description">
+                                            <h3 class="rate-block__title">Flexible rate - Bed &amp; breakfast</h3>
+                                            <p class="rate-block__text">Prepayment required, non-refundable</p>
+                                        </div>
+                                        <div class="rate-block__pricing">
+                                            <p class="rate-block__price"><span>&pound;105.70</span> per stay</p>
+                                        </div>
+                                        <div class="rate-block__cta">
+                                            <div class="btn-container">
+                                                <button class="btn btn--a" ng-click="submit($event);">Select rate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="availability-item">
+                                <div class="availability-item__content">
+                                    <div class="availability-item__image">
+                                        <img src="http://lorempixel.com/200/200/sports/" alt="" />
+                                    </div>
+                                    <div class="availability-item__description">
+                                        <h2 class="availability-item__title--a">Room type title</h2>
+                                        <button class="btn btn--toggle-content" ng-click="expand_2 = !expand_2"><span ng-show="expand_2">Less</span><span ng-show="!expand_2">More</span> info</button>
+                                        <div class="toggle-content" ng-class="{'toggle-content--expand': expand_2}">
+                                            <div class="richtext">
+                                                <p>Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <ul>
+                                                    <li>Large en-suite walk-in shower</li>
+                                                    <li>WIFI</li>
+                                                    <li>Window and carpets</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="availability-item__rate-box">
+                                        <p><span class="from-txt">from</span> <span class="price-txt">&pound;99.00</span> <span class="per-txt">per stay</span></p>
+                                        <div class="btn-container">
+                                            <button class="btn btn--a" ng-class="{'btn--selected': rates_2}" ng-click="rates_2 = !rates_2; $event.preventDefault();">Select</button>
+                                        </div>
+                                    </div>                               
+                                </div>
+                                <div class="availability-rates" ng-show="rates_2">
+                                    <div class="rate-block">
+                                        <div class="rate-block__description">
+                                            <h3 class="rate-block__title">Leisure saver rate - Bed &amp; breakfast</h3>
+                                            <p class="rate-block__text">Prepayment required, non-refundable</p>
+                                        </div>
+                                        <div class="rate-block__pricing">
+                                            <p class="rate-block__price"><span>&pound;99.00</span> per stay</p>
+                                        </div>
+                                        <div class="rate-block__cta">
+                                            <div class="btn-container">
+                                                <button class="btn btn--a" ng-click="submit($event);">Select rate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rate-block">
+                                        <div class="rate-block__description">
+                                            <h3 class="rate-block__title">Flexible rate - Bed &amp; breakfast</h3>
+                                            <p class="rate-block__text">Prepayment required, non-refundable</p>
+                                        </div>
+                                        <div class="rate-block__pricing">
+                                            <p class="rate-block__price"><span>&pound;105.70</span> per stay</p>
+                                        </div>
+                                        <div class="rate-block__cta">
+                                            <div class="btn-container">
+                                                <button class="btn btn--a" ng-click="submit($event);">Select rate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

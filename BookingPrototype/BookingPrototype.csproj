@@ -150,6 +150,15 @@
     <Content Include="assets\js\angular-app\modules\book\directives\directive.datePicker.js" />
     <Content Include="assets\js\angular-app\modules\book\directives\directive.roomsDropdown.js" />
     <Content Include="assets\js\angular-app\modules\book\service.bookForm.js" />
+    <Content Include="assets\js\angular-app\modules\dining\controller.dining.js" />
+    <Content Include="assets\js\angular-app\modules\dining\dining.html" />
+    <Content Include="assets\js\angular-app\modules\dining\service.dining.js" />
+    <Content Include="assets\js\angular-app\modules\extras\controller.extras.js" />
+    <Content Include="assets\js\angular-app\modules\extras\extras.html" />
+    <Content Include="assets\js\angular-app\modules\extras\service.extras.js" />
+    <Content Include="assets\js\angular-app\modules\guest-details\controller.guestDetails.js" />
+    <Content Include="assets\js\angular-app\modules\guest-details\guest-details.html" />
+    <Content Include="assets\js\angular-app\modules\guest-details\service.guestDetails.js" />
     <Content Include="assets\js\angular-app\routes.js" />
     <Content Include="assets\js\jquery-app\app.js" />
     <Content Include="assets\js\helpers\helpers.js" />
@@ -197,6 +206,9 @@
     <Content Include="assets\less\components\footer.less" />
     <Content Include="assets\less\layout\pageContentPanel.less" />
     <Content Include="assets\less\components\pageLoader.less" />
+    <Content Include="assets\less\components\availability\availabilityList.less" />
+    <Content Include="assets\less\components\buttons.less" />
+    <Content Include="assets\less\components\addons\addons.less" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -227,13 +239,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\ProgressBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\js\angular-app\modules\confirmation\" />
-    <Folder Include="assets\js\angular-app\modules\dining\" />
-    <Folder Include="assets\js\angular-app\modules\extras\" />
-    <Folder Include="assets\js\angular-app\modules\guest-details\" />
     <Folder Include="assets\js\angular-app\modules\payment\" />
     <Folder Include="assets\js\angular-app\partials\" />
     <Folder Include="Models\" />

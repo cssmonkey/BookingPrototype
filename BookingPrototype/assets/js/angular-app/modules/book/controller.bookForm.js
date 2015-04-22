@@ -4,6 +4,8 @@
 
     // local scope
     $scope.bookForm = {};
+    $rootScope.page = {};
+    $rootScope.page.title = "Book your stay";
 
     $scope.bookForm.numNightOptions = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14+']; 
     $scope.bookForm.roomsSelectOptions = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10+'];
